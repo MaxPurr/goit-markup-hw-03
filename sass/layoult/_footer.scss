@@ -1,0 +1,138 @@
+#bottom_panel {
+  background-color: var(--third-bg-color);
+  width:100%;
+}
+footer .container{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include tablet{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @include desktop{
+    text-align: left;
+  }
+}
+.bottom_panel__adress {
+  @include font($lh:24px,$fw:400,$ls:0.03em);
+  margin-top: 20px;
+  color: var(--second-title-color);
+}
+.bottom_panel__contacts_item{
+    margin-top: 9px;
+}
+.bottom_panel__contacts {
+  transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  @include font($lh: 24px, $fw: 400, $ls: 0.03em);
+  color: var(--translucent-color);
+  &:focus,
+  &:hover{
+    color: var(--second-title-color);
+  }
+}
+.join_us_container{
+  width: 206px;
+  display: flex;
+  flex-direction: column;
+}
+.bottom_panel__join_us_container{
+  margin: 60px auto 0 auto;
+  @include tablet {
+    margin-top: 5px;
+    margin-left: 165px;
+    margin-right: 0;
+  }
+  @include desktop {
+    margin-top: 12px;
+    margin-left: 70px;
+  }
+}
+.bottom_panel__title {
+  @include font($fw: null, $ls: 0.03em);
+  text-transform: uppercase;
+}
+.bottom_panel__title--light{
+  color:var(--second-title-color);
+}
+.bottom_panel__icon_box{
+  margin-top: 20px;
+  @extend .list;
+}
+.bottom_panel__icon_circle {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.icon_circle--dark{
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.bottom_panel__icon {
+  fill:var(--fourth-bg-color);
+  width: 20px;
+  height: 20px;
+}
+.subscribe_container{
+  width: 100%;
+  @include tablet {
+    width: 450px;
+  }
+  @include desktop {
+    width: 570px;
+  }
+}
+.bottom_panel__subscribe_container{
+  margin-top: 60px;
+  @include desktop{
+    margin-top: 12px;
+    margin-left: 93px;
+  }
+}
+.bottom_panel__input_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+.bottom_panel__input {
+  transition: border-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  width: 100%;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: none;
+  padding-left: 16px;
+  outline: none;
+  caret-color: rgba(255, 255, 255, 0.3);
+  color: var(--second-title-color);
+  @include font(16px,20px,400,0.03em);
+  &:focus{
+    border: 1px solid var(--second-title-color);
+  }
+  &::placeholder{
+    color: rgba(255, 255, 255, 0.6);
+  }
+  @include desktop{
+    width: 358px;
+  }
+}
+.bottom_panel__btn {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  @include desktop{
+    margin-top: 0;
+    margin-left: 12px;
+  }
+}
+.subscribe_icon{
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}

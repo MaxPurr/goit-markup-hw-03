@@ -1,0 +1,6 @@
+.nav_text{
+  @include font();
+}
+.nav_text--dim {
+  color:var(--main-text-color);
+}

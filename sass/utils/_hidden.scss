@@ -1,0 +1,23 @@
+.is_hidden{
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+.visually_hidden{
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.only_desktop {
+  @media screen and (max-width:1199px) {
+    display: none;
+  }
+}

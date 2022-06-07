@@ -1,0 +1,14 @@
+.icon_circle{
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  &:hover,
+  &:focus{
+    background-color:var(--fifth-bg-color);
+    transform: scale(1.2);
+  }
+}

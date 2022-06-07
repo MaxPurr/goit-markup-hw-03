@@ -1,0 +1,31 @@
+// Переменные
+@import "./utils/vars";
+@import "./utils/hidden";
+@import "./utils/mixins";
+
+// Общее
+@import "./base/reset";
+
+// Секции
+@import "./layoult/header";
+@import "./layoult/preview";
+@import "./layoult/good_qualities";
+@import "./layoult/what_we_do";
+@import "./layoult/our_team";
+@import "./layoult/clients";
+@import "./layoult/modal";
+@import "./layoult/portfolio";
+@import "./layoult/footer";
+
+//Компоненты
+@import "./components/btn";
+@import "./components/close_btn";
+@import "./components/container";
+@import "./components/section";
+@import "./components/icon_circle";
+@import "./components/nav_text";
+@import "./components/top_text";
+@import "./components/studio_title";
+@import "./components/backdrop";
+@import "./components/list";
+@import "./components/logo";

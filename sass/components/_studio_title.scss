@@ -1,0 +1,8 @@
+.studio_title {
+  margin-bottom: 30px;
+  @include font(28px, 33px, null, 0.03em);
+  @include desktop {
+    margin-bottom: 50px;
+    @include font(36px,42px,null,0.03em);
+  }
+}

@@ -1,0 +1,17 @@
+.logo {
+  font-family: "Raleway";
+  @include font(24px, 28px, 700, 0.03em);
+  @include desktop{
+    @include font(26px,31px,700,0.03em);
+  }
+}
+.logo--dark{
+  color:var(--dark-logo-color);
+}
+.logo--light {
+  color: var(--light-logo-color);
+}
+.logo--highlighting {
+  font-family: "Raleway";
+  color: var(--highlighted-text-color);
+}

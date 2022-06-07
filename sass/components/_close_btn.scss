@@ -1,0 +1,12 @@
+.close_btn{
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;  
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.close_btn--light {
+  background: #FFFFFF;
+}
